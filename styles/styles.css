@@ -8,7 +8,9 @@
 
 body{
     font-family: 'Mulish', sans-serif;
-    max-width: 1330px;
+}
+main,header{
+    max-width: 1200px;
     margin:0 auto;
 }
 
@@ -28,12 +30,17 @@ body{
 
 .common-btn{
     background-color: #FF5400;
+    border-radius: 8px;
     padding: 14px 10px;
     color: white;
     border: none;   
     cursor: pointer;
     font-weight: 800;
     font-size: 1.25;
+}
+
+body hr{
+    color: rgba(19, 19, 24, 0.1);
 }
 
 /* nav styles */
@@ -156,7 +163,7 @@ body{
     
     flex: 1;
 }
-.tours-text h1,p{
+.tours-text h1, .tours-text p{
     margin-bottom: 1.5rem;
 }
 .tours-img{
@@ -242,4 +249,216 @@ body{
     grid-column: 6/span 7;
 }
 
+/* why choose us styles */
+.choose-us{
+    margin-top: 100px;
+}
+.choose-us-text{
+    text-align: center;
+}
+.choose-us-text p{
+    width: 50%;
+    margin: 0 auto;
+}
 
+.single-card1, .single-card2,.single-card3{
+    /* width: 50%; */
+    padding: 2rem;
+}
+.single-card1{
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.single-card2{
+    border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+
+.single-card3{
+    border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+}
+.choose-card-container img{
+    margin-bottom: 2rem;
+}
+.choose-card-container h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318 ;
+}
+.choose-card-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1.5rem;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.single-card1{
+    grid-column: 1/span 6;
+}
+.single-card2{
+    grid-column: 7/span 6;
+}
+.single-card3{
+    grid-column: 4/span 6;
+}
+
+/* rating styles */
+
+.rating-container{
+    margin-top: 100px;
+}
+.rating-container h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.review-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.review-box{
+    height: 20vh;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin:15px;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    margin-right: 10px;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.review-star{
+    color: gold;
+}
+.reviews{
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Newsletter styles */
+.newsletter{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+   
+
+}
+.newsletter-text{
+    border: 2px solid #FF5400;
+    border-radius: 1rem;
+    width: 40%;
+    padding: 40px;
+}
+.newsletter h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+.newsletter-img{
+    width: 60%;
+    position: relative;
+   
+}
+.newsletter-img img{
+    width: 100%;
+    position: relative;
+}
+.discount-tag{
+    background-color: #FF5400;
+    color: white;
+    text-align: center;
+    width: max-content;
+    padding: 15px;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(11%) translateY(-50%);
+    rotate: -30deg;
+    
+}
+
+.discount-tag p{
+    font-size: 1.5rem;
+}
+
+.discount-tag h3{
+    font-size: 2rem;
+}
+
+
+.newsletter-input{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+   
+
+}
+.newsletter-input input[type="text"],
+.newsletter-input input[type="email"]{
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+/* footer styles */
+footer{
+    margin-top: 100px;
+    min-height: 400px;
+    background-color: rgba(19, 19, 24, 0.05);;
+}
+.footer-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 8rem;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 2rem ;
+    margin-bottom: 1rem;
+}
+.footer-content>p{
+    width: 70%;
+    margin: 0 auto;
+}
+.footer-icon{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+footer hr{
+    margin-bottom: 3rem;
+}
