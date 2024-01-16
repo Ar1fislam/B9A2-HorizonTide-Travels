@@ -1,0 +1,134 @@
+/* shared styles */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Mulish', sans-serif;
+    max-width: 1330px;
+    margin:0 auto;
+}
+
+.primary-color{
+    color: #FF5400 !important;
+}
+
+.common-description{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+.common-title{
+    font-size: 2.5;
+    font-weight: 800;
+    color: #131318 ;
+}
+
+/* nav styles */
+.nav-section{
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.nav-container{
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    font-weight: 800;
+  }
+  .nav-container img{
+    width: 60px;
+  }
+  .nav-container p{
+    font-size: 2.2rem;
+  }
+
+  .items-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .items-container a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  /* banner styles */
+  .banner-section{
+    margin-top: 3rem;
+    height: 60vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../Images/Group\ 13\ \(1\)\ \(1\).png') ;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100%; */
+    background-size: cover;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.banner-text p{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.banner-btn{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.banner-input{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    
+}
+
+.banner-btn input, select, button{
+    width: 9.373rem;
+    padding: 15px 10px;
+    color: grey;
+    border-radius: 8px;
+    border:none;
+}
+
+.banner-input button{
+    background-color: #FF5400;
+    color: white;
+    border: none;
+   
+    cursor: pointer;
+}
+.fa-angle-down{
+    position: relative;
+    right: 1.5rem;
+}
