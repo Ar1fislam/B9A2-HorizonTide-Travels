@@ -148,10 +148,10 @@ body hr{
    
     cursor: pointer;
 }
-.fa-angle-down{
+/* .fa-angle-down{
     position: relative;
     right: 1.5rem;
-}
+} */
 
 /* our popular tours style */
 
@@ -160,19 +160,22 @@ body hr{
     display: flex;
     gap: 3.5rem;
     justify-content: space-between;
-    max-height: 500px;
 }
 
 .tours-text{
     
     flex: 1;
 }
-.tours-text h1, .tours-text p{
-    margin-bottom: 1.5rem;
-}
 .tours-img{
     
     flex:1;
+}
+.tours-text button{
+    margin-top: 4.5rem;
+}
+
+.tours-text h1, .tours-text p{
+    margin-bottom: 1.5rem;
 }
 .tours-img img{
     height: 100%;

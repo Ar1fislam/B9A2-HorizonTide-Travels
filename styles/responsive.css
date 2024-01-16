@@ -53,14 +53,27 @@
 
     .tours{
         flex-direction: column;
-        gap: 1.5rem;
+    }
+    .tours-text,
+    .tours-img {
+        flex: 1;
+        width: 100%;
     }
     .tours-img img{
         height: 50vh;
         width: 100%;
         
     }
-    
+   
+    .tours-text button{
+        margin-top: 2.5rem;
+        width: 40%;
+
+    }
+    .destination p{
+        width: 100%;
+      
+    }
     .destination-img{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1,1fr);
