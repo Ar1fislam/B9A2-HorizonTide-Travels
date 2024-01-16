@@ -18,13 +18,22 @@ body{
 
 .common-description{
     font-size: 1rem;
-    color: white;
     font-weight: 400;
 }
 .common-title{
-    font-size: 2.5;
+    font-size: 2.5rem;
     font-weight: 800;
     color: #131318 ;
+}
+
+.common-btn{
+    background-color: #FF5400;
+    padding: 14px 10px;
+    color: white;
+    border: none;   
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.25;
 }
 
 /* nav styles */
@@ -131,4 +140,38 @@ body{
 .fa-angle-down{
     position: relative;
     right: 1.5rem;
+}
+
+/* our popular tours style */
+
+.tours{
+    margin-top: 100px;
+    display: flex;
+    gap: 3.5rem;
+    justify-content: space-between;
+    max-height: 500px;
+}
+
+.tours-text{
+    
+    flex: 1;
+}
+.tours-text h1,p{
+    margin-bottom: 1.5rem;
+}
+.tours-img{
+    
+    flex:1;
+}
+.tours-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+}
+.bullet-point{
+    display: list-item; 
+    list-style-type: disc; 
+    list-style-position: inside; 
+    margin-left: 40px;
 }
