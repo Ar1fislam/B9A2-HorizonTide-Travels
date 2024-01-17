@@ -176,3 +176,39 @@
     }
 
 }
+
+@media  screen and (min-width:992px) and (max-width:1199px){
+
+    main,header{
+        max-width: 991px;
+        margin:0 auto;
+        padding: 10px;
+        
+    }
+
+    .banner-section{
+   min-height: auto;
+   height: 50vh;
+    }
+
+
+    /* .tours{
+        flex-direction: column;
+    } */
+
+    .discount-tag{
+       
+        transform: translateX(30%) translateY(-145%);
+        padding: 10px;
+   
+        
+    }
+    .discount-tag p{
+        font-size: 1.2rem;
+    }
+    
+    .discount-tag h3{
+        font-size: 1.6rem;
+    }
+
+}
